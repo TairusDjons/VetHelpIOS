@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */; };
+		F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D7F1FBB0E4300B6148E /* ViewController.swift */; };
+		F4717D831FBB0E4300B6148E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4717D811FBB0E4300B6148E /* Main.storyboard */; };
+		F4717D851FBB0E4300B6148E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4717D841FBB0E4300B6148E /* Assets.xcassets */; };
+		F4717D881FBB0E4300B6148E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4717D861FBB0E4300B6148E /* LaunchScreen.storyboard */; };
+		F4717D931FBB0E4300B6148E /* VetHelpIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D921FBB0E4300B6148E /* VetHelpIOSTests.swift */; };
+		F4717D9E1FBB0E4300B6148E /* VetHelpIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4717D8F1FBB0E4300B6148E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4717D721FBB0E4300B6148E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4717D791FBB0E4300B6148E;
+			remoteInfo = VetHelpIOS;
+		};
+		F4717D9A1FBB0E4300B6148E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4717D721FBB0E4300B6148E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4717D791FBB0E4300B6148E;
+			remoteInfo = VetHelpIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4717D7A1FBB0E4300B6148E /* VetHelpIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VetHelpIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4717D7F1FBB0E4300B6148E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4717D821FBB0E4300B6148E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4717D841FBB0E4300B6148E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4717D871FBB0E4300B6148E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4717D891FBB0E4300B6148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4717D8E1FBB0E4300B6148E /* VetHelpIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VetHelpIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4717D921FBB0E4300B6148E /* VetHelpIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetHelpIOSTests.swift; sourceTree = "<group>"; };
+		F4717D941FBB0E4300B6148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4717D991FBB0E4300B6148E /* VetHelpIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VetHelpIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetHelpIOSUITests.swift; sourceTree = "<group>"; };
+		F4717D9F1FBB0E4300B6148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4717D771FBB0E4300B6148E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4717D8B1FBB0E4300B6148E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4717D961FBB0E4300B6148E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4717D711FBB0E4300B6148E = {
+			isa = PBXGroup;
+			children = (
+				F4717D7C1FBB0E4300B6148E /* VetHelpIOS */,
+				F4717D911FBB0E4300B6148E /* VetHelpIOSTests */,
+				F4717D9C1FBB0E4300B6148E /* VetHelpIOSUITests */,
+				F4717D7B1FBB0E4300B6148E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4717D7B1FBB0E4300B6148E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4717D7A1FBB0E4300B6148E /* VetHelpIOS.app */,
+				F4717D8E1FBB0E4300B6148E /* VetHelpIOSTests.xctest */,
+				F4717D991FBB0E4300B6148E /* VetHelpIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4717D7C1FBB0E4300B6148E /* VetHelpIOS */ = {
+			isa = PBXGroup;
+			children = (
+				F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */,
+				F4717D7F1FBB0E4300B6148E /* ViewController.swift */,
+				F4717D811FBB0E4300B6148E /* Main.storyboard */,
+				F4717D841FBB0E4300B6148E /* Assets.xcassets */,
+				F4717D861FBB0E4300B6148E /* LaunchScreen.storyboard */,
+				F4717D891FBB0E4300B6148E /* Info.plist */,
+			);
+			path = VetHelpIOS;
+			sourceTree = "<group>";
+		};
+		F4717D911FBB0E4300B6148E /* VetHelpIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4717D921FBB0E4300B6148E /* VetHelpIOSTests.swift */,
+				F4717D941FBB0E4300B6148E /* Info.plist */,
+			);
+			path = VetHelpIOSTests;
+			sourceTree = "<group>";
+		};
+		F4717D9C1FBB0E4300B6148E /* VetHelpIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */,
+				F4717D9F1FBB0E4300B6148E /* Info.plist */,
+			);
+			path = VetHelpIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4717D791FBB0E4300B6148E /* VetHelpIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4717DA21FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOS" */;
+			buildPhases = (
+				F4717D761FBB0E4300B6148E /* Sources */,
+				F4717D771FBB0E4300B6148E /* Frameworks */,
+				F4717D781FBB0E4300B6148E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VetHelpIOS;
+			productName = VetHelpIOS;
+			productReference = F4717D7A1FBB0E4300B6148E /* VetHelpIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4717D8D1FBB0E4300B6148E /* VetHelpIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4717DA51FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOSTests" */;
+			buildPhases = (
+				F4717D8A1FBB0E4300B6148E /* Sources */,
+				F4717D8B1FBB0E4300B6148E /* Frameworks */,
+				F4717D8C1FBB0E4300B6148E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4717D901FBB0E4300B6148E /* PBXTargetDependency */,
+			);
+			name = VetHelpIOSTests;
+			productName = VetHelpIOSTests;
+			productReference = F4717D8E1FBB0E4300B6148E /* VetHelpIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4717D981FBB0E4300B6148E /* VetHelpIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4717DA81FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOSUITests" */;
+			buildPhases = (
+				F4717D951FBB0E4300B6148E /* Sources */,
+				F4717D961FBB0E4300B6148E /* Frameworks */,
+				F4717D971FBB0E4300B6148E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4717D9B1FBB0E4300B6148E /* PBXTargetDependency */,
+			);
+			name = VetHelpIOSUITests;
+			productName = VetHelpIOSUITests;
+			productReference = F4717D991FBB0E4300B6148E /* VetHelpIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4717D721FBB0E4300B6148E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = VetDev1;
+				TargetAttributes = {
+					F4717D791FBB0E4300B6148E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					F4717D8D1FBB0E4300B6148E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4717D791FBB0E4300B6148E;
+					};
+					F4717D981FBB0E4300B6148E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4717D791FBB0E4300B6148E;
+					};
+				};
+			};
+			buildConfigurationList = F4717D751FBB0E4300B6148E /* Build configuration list for PBXProject "VetHelpIOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4717D711FBB0E4300B6148E;
+			productRefGroup = F4717D7B1FBB0E4300B6148E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4717D791FBB0E4300B6148E /* VetHelpIOS */,
+				F4717D8D1FBB0E4300B6148E /* VetHelpIOSTests */,
+				F4717D981FBB0E4300B6148E /* VetHelpIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4717D781FBB0E4300B6148E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4717D881FBB0E4300B6148E /* LaunchScreen.storyboard in Resources */,
+				F4717D851FBB0E4300B6148E /* Assets.xcassets in Resources */,
+				F4717D831FBB0E4300B6148E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4717D8C1FBB0E4300B6148E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4717D971FBB0E4300B6148E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4717D761FBB0E4300B6148E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */,
+				F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4717D8A1FBB0E4300B6148E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4717D931FBB0E4300B6148E /* VetHelpIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4717D951FBB0E4300B6148E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4717D9E1FBB0E4300B6148E /* VetHelpIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4717D901FBB0E4300B6148E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4717D791FBB0E4300B6148E /* VetHelpIOS */;
+			targetProxy = F4717D8F1FBB0E4300B6148E /* PBXContainerItemProxy */;
+		};
+		F4717D9B1FBB0E4300B6148E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4717D791FBB0E4300B6148E /* VetHelpIOS */;
+			targetProxy = F4717D9A1FBB0E4300B6148E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4717D811FBB0E4300B6148E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4717D821FBB0E4300B6148E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4717D861FBB0E4300B6148E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4717D871FBB0E4300B6148E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4717DA01FBB0E4300B6148E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4717DA11FBB0E4300B6148E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4717DA31FBB0E4300B6148E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VetHelpIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4717DA41FBB0E4300B6148E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VetHelpIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4717DA61FBB0E4300B6148E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VetHelpIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VetHelpIOS.app/VetHelpIOS";
+			};
+			name = Debug;
+		};
+		F4717DA71FBB0E4300B6148E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VetHelpIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VetHelpIOS.app/VetHelpIOS";
+			};
+			name = Release;
+		};
+		F4717DA91FBB0E4300B6148E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VetHelpIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VetHelpIOS;
+			};
+			name = Debug;
+		};
+		F4717DAA1FBB0E4300B6148E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VetHelpIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VetHelpIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4717D751FBB0E4300B6148E /* Build configuration list for PBXProject "VetHelpIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4717DA01FBB0E4300B6148E /* Debug */,
+				F4717DA11FBB0E4300B6148E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4717DA21FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4717DA31FBB0E4300B6148E /* Debug */,
+				F4717DA41FBB0E4300B6148E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4717DA51FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4717DA61FBB0E4300B6148E /* Debug */,
+				F4717DA71FBB0E4300B6148E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4717DA81FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4717DA91FBB0E4300B6148E /* Debug */,
+				F4717DAA1FBB0E4300B6148E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4717D721FBB0E4300B6148E /* Project object */;
+}
