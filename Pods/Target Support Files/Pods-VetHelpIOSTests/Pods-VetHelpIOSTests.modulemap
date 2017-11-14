@@ -1,0 +1,6 @@
+framework module Pods_VetHelpIOSTests {
+  umbrella header "Pods-VetHelpIOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
