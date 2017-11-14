@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B62E0B660B5D1562B14B6A6 /* Pods_VetHelpIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F60BB418FEC00117CE46D0C /* Pods_VetHelpIOS.framework */; };
+		401F08377FDADDD46574A71C /* Pods_VetHelpIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90594B81836F9BBE94B1C4F5 /* Pods_VetHelpIOSUITests.framework */; };
+		C18764FAA5E5561F01FCF0E8 /* Pods_VetHelpIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */; };
 		F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */; };
 		F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D7F1FBB0E4300B6148E /* ViewController.swift */; };
 		F4717D831FBB0E4300B6148E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4717D811FBB0E4300B6148E /* Main.storyboard */; };
@@ -14,6 +17,8 @@
 		F4717D881FBB0E4300B6148E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4717D861FBB0E4300B6148E /* LaunchScreen.storyboard */; };
 		F4717D931FBB0E4300B6148E /* VetHelpIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D921FBB0E4300B6148E /* VetHelpIOSTests.swift */; };
 		F4717D9E1FBB0E4300B6148E /* VetHelpIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */; };
+		F4717DAD1FBB133000B6148E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717DAC1FBB132F00B6148E /* LoginController.swift */; };
+		F4717DAF1FBB133B00B6148E /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717DAE1FBB133B00B6148E /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F60BB418FEC00117CE46D0C /* Pods_VetHelpIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetHelpIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D7E4DB80C7582DADA0B632 /* Pods-VetHelpIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOS/Pods-VetHelpIOS.release.xcconfig"; sourceTree = "<group>"; };
+		7B1598B04C3DD896C152D4B5 /* Pods-VetHelpIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOSTests/Pods-VetHelpIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DE8DF9B0BD56697297889A7 /* Pods-VetHelpIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOSUITests/Pods-VetHelpIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		90594B81836F9BBE94B1C4F5 /* Pods_VetHelpIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetHelpIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B67EE16B64A263C9CD968E3 /* Pods-VetHelpIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOSUITests/Pods-VetHelpIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A32C771C31F1C20C703F9CBD /* Pods-VetHelpIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOSTests/Pods-VetHelpIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0CB25077F87E5CC5FFC7EDD /* Pods-VetHelpIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOS/Pods-VetHelpIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetHelpIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4717D7A1FBB0E4300B6148E /* VetHelpIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VetHelpIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4717D7F1FBB0E4300B6148E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,8 @@
 		F4717D991FBB0E4300B6148E /* VetHelpIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VetHelpIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetHelpIOSUITests.swift; sourceTree = "<group>"; };
 		F4717D9F1FBB0E4300B6148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4717DAC1FBB132F00B6148E /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = ../../../Trying/Trying/LoginController.swift; sourceTree = "<group>"; };
+		F4717DAE1FBB133B00B6148E /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = ../../../Trying/Trying/RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B62E0B660B5D1562B14B6A6 /* Pods_VetHelpIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18764FAA5E5561F01FCF0E8 /* Pods_VetHelpIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401F08377FDADDD46574A71C /* Pods_VetHelpIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97C5E9999C6340BAC5594C51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F60BB418FEC00117CE46D0C /* Pods_VetHelpIOS.framework */,
+				EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */,
+				90594B81836F9BBE94B1C4F5 /* Pods_VetHelpIOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5104EAED188E51CC78B17A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB25077F87E5CC5FFC7EDD /* Pods-VetHelpIOS.debug.xcconfig */,
+				75D7E4DB80C7582DADA0B632 /* Pods-VetHelpIOS.release.xcconfig */,
+				A32C771C31F1C20C703F9CBD /* Pods-VetHelpIOSTests.debug.xcconfig */,
+				7B1598B04C3DD896C152D4B5 /* Pods-VetHelpIOSTests.release.xcconfig */,
+				9B67EE16B64A263C9CD968E3 /* Pods-VetHelpIOSUITests.debug.xcconfig */,
+				7DE8DF9B0BD56697297889A7 /* Pods-VetHelpIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F4717D711FBB0E4300B6148E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				F4717D911FBB0E4300B6148E /* VetHelpIOSTests */,
 				F4717D9C1FBB0E4300B6148E /* VetHelpIOSUITests */,
 				F4717D7B1FBB0E4300B6148E /* Products */,
+				D5104EAED188E51CC78B17A8 /* Pods */,
+				97C5E9999C6340BAC5594C51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +141,7 @@
 		F4717D7C1FBB0E4300B6148E /* VetHelpIOS */ = {
 			isa = PBXGroup;
 			children = (
+				F4717DAB1FBB130200B6148E /* Controllers */,
 				F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */,
 				F4717D7F1FBB0E4300B6148E /* ViewController.swift */,
 				F4717D811FBB0E4300B6148E /* Main.storyboard */,
@@ -125,6 +170,15 @@
 			path = VetHelpIOSUITests;
 			sourceTree = "<group>";
 		};
+		F4717DAB1FBB130200B6148E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4717DAE1FBB133B00B6148E /* RegisterController.swift */,
+				F4717DAC1FBB132F00B6148E /* LoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4717DA21FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOS" */;
 			buildPhases = (
+				AFC6FAB1A6953DAC06D1CB12 /* [CP] Check Pods Manifest.lock */,
 				F4717D761FBB0E4300B6148E /* Sources */,
 				F4717D771FBB0E4300B6148E /* Frameworks */,
 				F4717D781FBB0E4300B6148E /* Resources */,
+				1ABEC0F02CC819E8DE1686E9 /* [CP] Embed Pods Frameworks */,
+				4BC7F6533230430266D38766 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4717DA51FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOSTests" */;
 			buildPhases = (
+				1AEDDE353C46D652B863FF47 /* [CP] Check Pods Manifest.lock */,
 				F4717D8A1FBB0E4300B6148E /* Sources */,
 				F4717D8B1FBB0E4300B6148E /* Frameworks */,
 				F4717D8C1FBB0E4300B6148E /* Resources */,
+				B333A76CF1073EEC9FCC4053 /* [CP] Embed Pods Frameworks */,
+				CC67D1E9B8F1D9BA2A48C942 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4717DA81FBB0E4300B6148E /* Build configuration list for PBXNativeTarget "VetHelpIOSUITests" */;
 			buildPhases = (
+				F99F7256E4493CAE52CFF605 /* [CP] Check Pods Manifest.lock */,
 				F4717D951FBB0E4300B6148E /* Sources */,
 				F4717D961FBB0E4300B6148E /* Frameworks */,
 				F4717D971FBB0E4300B6148E /* Resources */,
+				98E9A9939BAA739E4EFD05B2 /* [CP] Embed Pods Frameworks */,
+				AA3716C2CBFBC51E9E12509F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +317,174 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1ABEC0F02CC819E8DE1686E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VetHelpIOS/Pods-VetHelpIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReCaptcha/ReCaptcha.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReCaptcha.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetHelpIOS/Pods-VetHelpIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AEDDE353C46D652B863FF47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VetHelpIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BC7F6533230430266D38766 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetHelpIOS/Pods-VetHelpIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98E9A9939BAA739E4EFD05B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetHelpIOSUITests/Pods-VetHelpIOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3716C2CBFBC51E9E12509F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetHelpIOSUITests/Pods-VetHelpIOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFC6FAB1A6953DAC06D1CB12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VetHelpIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B333A76CF1073EEC9FCC4053 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetHelpIOSTests/Pods-VetHelpIOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC67D1E9B8F1D9BA2A48C942 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetHelpIOSTests/Pods-VetHelpIOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F99F7256E4493CAE52CFF605 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VetHelpIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4717D761FBB0E4300B6148E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4717DAF1FBB133B00B6148E /* RegisterController.swift in Sources */,
 				F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */,
+				F4717DAD1FBB133000B6148E /* LoginController.swift in Sources */,
 				F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +649,7 @@
 		};
 		F4717DA31FBB0E4300B6148E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CB25077F87E5CC5FFC7EDD /* Pods-VetHelpIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +664,7 @@
 		};
 		F4717DA41FBB0E4300B6148E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D7E4DB80C7582DADA0B632 /* Pods-VetHelpIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +679,7 @@
 		};
 		F4717DA61FBB0E4300B6148E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A32C771C31F1C20C703F9CBD /* Pods-VetHelpIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +696,7 @@
 		};
 		F4717DA71FBB0E4300B6148E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1598B04C3DD896C152D4B5 /* Pods-VetHelpIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +713,7 @@
 		};
 		F4717DA91FBB0E4300B6148E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B67EE16B64A263C9CD968E3 /* Pods-VetHelpIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +729,7 @@
 		};
 		F4717DAA1FBB0E4300B6148E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE8DF9B0BD56697297889A7 /* Pods-VetHelpIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
