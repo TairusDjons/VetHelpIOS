@@ -10,6 +10,8 @@
 		0B62E0B660B5D1562B14B6A6 /* Pods_VetHelpIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F60BB418FEC00117CE46D0C /* Pods_VetHelpIOS.framework */; };
 		401F08377FDADDD46574A71C /* Pods_VetHelpIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90594B81836F9BBE94B1C4F5 /* Pods_VetHelpIOSUITests.framework */; };
 		C18764FAA5E5561F01FCF0E8 /* Pods_VetHelpIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */; };
+		F4344AEF1FBCB7E000B750E6 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */; };
+		F4344AF11FBCB81A00B750E6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4344AF01FBCB81A00B750E6 /* LoginController.swift */; };
 		F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */; };
 		F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D7F1FBB0E4300B6148E /* ViewController.swift */; };
 		F4717D831FBB0E4300B6148E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4717D811FBB0E4300B6148E /* Main.storyboard */; };
@@ -17,8 +19,8 @@
 		F4717D881FBB0E4300B6148E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4717D861FBB0E4300B6148E /* LaunchScreen.storyboard */; };
 		F4717D931FBB0E4300B6148E /* VetHelpIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D921FBB0E4300B6148E /* VetHelpIOSTests.swift */; };
 		F4717D9E1FBB0E4300B6148E /* VetHelpIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */; };
-		F4717DAD1FBB133000B6148E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717DAC1FBB132F00B6148E /* LoginController.swift */; };
-		F4717DAF1FBB133B00B6148E /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717DAE1FBB133B00B6148E /* RegisterController.swift */; };
+		F4FF99211FC08EAD007C376C /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99201FC08EAD007C376C /* ClientService.swift */; };
+		F4FF99231FC09A66007C376C /* Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99221FC09A66007C376C /* Oauth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		A32C771C31F1C20C703F9CBD /* Pods-VetHelpIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOSTests/Pods-VetHelpIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0CB25077F87E5CC5FFC7EDD /* Pods-VetHelpIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOS/Pods-VetHelpIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetHelpIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		F4344AF01FBCB81A00B750E6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F4717D7A1FBB0E4300B6148E /* VetHelpIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VetHelpIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4717D7F1FBB0E4300B6148E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,8 +65,8 @@
 		F4717D991FBB0E4300B6148E /* VetHelpIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VetHelpIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetHelpIOSUITests.swift; sourceTree = "<group>"; };
 		F4717D9F1FBB0E4300B6148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4717DAC1FBB132F00B6148E /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = ../../../Trying/Trying/LoginController.swift; sourceTree = "<group>"; };
-		F4717DAE1FBB133B00B6148E /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterController.swift; path = ../../../Trying/Trying/RegisterController.swift; sourceTree = "<group>"; };
+		F4FF99201FC08EAD007C376C /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
+		F4FF99221FC09A66007C376C /* Oauth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oauth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 		F4717D7C1FBB0E4300B6148E /* VetHelpIOS */ = {
 			isa = PBXGroup;
 			children = (
+				F4FF991F1FC08E73007C376C /* API */,
 				F4717DAB1FBB130200B6148E /* Controllers */,
 				F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */,
 				F4717D7F1FBB0E4300B6148E /* ViewController.swift */,
@@ -173,10 +178,19 @@
 		F4717DAB1FBB130200B6148E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4717DAE1FBB133B00B6148E /* RegisterController.swift */,
-				F4717DAC1FBB132F00B6148E /* LoginController.swift */,
+				F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */,
+				F4344AF01FBCB81A00B750E6 /* LoginController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F4FF991F1FC08E73007C376C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F4FF99201FC08EAD007C376C /* ClientService.swift */,
+				F4FF99221FC09A66007C376C /* Oauth.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,9 +496,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4717DAF1FBB133B00B6148E /* RegisterController.swift in Sources */,
+				F4344AEF1FBCB7E000B750E6 /* RegisterController.swift in Sources */,
+				F4FF99231FC09A66007C376C /* Oauth.swift in Sources */,
+				F4344AF11FBCB81A00B750E6 /* LoginController.swift in Sources */,
 				F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */,
-				F4717DAD1FBB133000B6148E /* LoginController.swift in Sources */,
+				F4FF99211FC08EAD007C376C /* ClientService.swift in Sources */,
 				F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
