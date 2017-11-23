@@ -14,6 +14,8 @@ import p2_OAuth2
 class LoginController: UIViewController {
     
     override func viewDidLoad() {
+    
+        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -24,7 +26,26 @@ class LoginController: UIViewController {
     
     
     @IBAction func loginOnTap(_ sender: Any) {
-        ClientService.loginUser(username: usernameTextField!.text!, password: passwordTextField.text!)
+        var results: Any?
+        ClientService.loginUser(username: usernameTextField!.text!, password: passwordTextField.text!){ result in
+            switch result {
+            case .success(let value):
+                self.performSegue(withIdentifier: "toMainTabBar", sender: self)
+            case .error(let error):
+                self.alertMessage(usrMessage: "Неверный логин или пароль")
+ 
+        }
+    }
+    }
+    
+    
+    func alertMessage(usrMessage: String) {
+        var alert = UIAlertController(title: "Alert", message: usrMessage, preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
+        
+        alert.addAction(action)
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,4 +67,5 @@ class LoginController: UIViewController {
     
     
 }
+
 
