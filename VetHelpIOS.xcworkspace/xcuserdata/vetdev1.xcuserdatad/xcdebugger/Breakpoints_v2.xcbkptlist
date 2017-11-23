@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/RegisterController.swift"
-            timestampString = "532736408.249292"
+            timestampString = "533125016.870757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/RegisterController.swift"
-            timestampString = "532736408.249427"
+            timestampString = "533125016.870891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
@@ -54,81 +54,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VetHelpIOS/API/ClientService.swift"
-            timestampString = "532736408.249537"
+            filePath = "VetHelpIOS/Controllers/LoginController.swift"
+            timestampString = "533130230.266157"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "registerUser(email:username:password:reCaptcha:)"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VetHelpIOS/API/ClientService.swift"
-            timestampString = "532736408.250599"
+            filePath = "VetHelpIOS/Controllers/LoginNavigationController.swift"
+            timestampString = "533130662.020228"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "registerUser(email:username:password:reCaptcha:)"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VetHelpIOS/API/ClientService.swift"
-            timestampString = "532736408.251306"
+            filePath = "VetHelpIOS/Controllers/LoginNavigationController.swift"
+            timestampString = "533130662.020468"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "registerUser(email:username:password:reCaptcha:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static VetHelpIOS.ClientService.registerUser(email: Swift.String, username: Swift.String, password: Swift.String, reCaptcha: Swift.String) -&gt; VetHelpIOS.ClientService.Result&lt;Swift.String&gt;"
-                  moduleName = "VetHelpIOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vetdev1/Desktop/VetHelpIOS/VetHelpIOS/API/ClientService.swift"
-                  timestampString = "532736408.418343"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "1218">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in static VetHelpIOS.ClientService.registerUser(email: Swift.String, username: Swift.String, password: Swift.String, reCaptcha: Swift.String) -&gt; VetHelpIOS.ClientService.Result&lt;Swift.String&gt;"
-                  moduleName = "VetHelpIOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vetdev1/Desktop/VetHelpIOS/VetHelpIOS/API/ClientService.swift"
-                  timestampString = "532736408.422015"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "15">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

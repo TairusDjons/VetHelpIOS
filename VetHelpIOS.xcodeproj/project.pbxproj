@@ -12,6 +12,8 @@
 		C18764FAA5E5561F01FCF0E8 /* Pods_VetHelpIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */; };
 		F4344AEF1FBCB7E000B750E6 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */; };
 		F4344AF11FBCB81A00B750E6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4344AF01FBCB81A00B750E6 /* LoginController.swift */; };
+		F468FCD71FC4D7010069DC7F /* PetsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468FCD61FC4D7010069DC7F /* PetsTableController.swift */; };
+		F468FCDA1FC4DAB80069DC7F /* PetTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468FCD91FC4DAB80069DC7F /* PetTableCell.swift */; };
 		F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */; };
 		F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D7F1FBB0E4300B6148E /* ViewController.swift */; };
 		F4717D831FBB0E4300B6148E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4717D811FBB0E4300B6148E /* Main.storyboard */; };
@@ -19,8 +21,10 @@
 		F4717D881FBB0E4300B6148E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4717D861FBB0E4300B6148E /* LaunchScreen.storyboard */; };
 		F4717D931FBB0E4300B6148E /* VetHelpIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D921FBB0E4300B6148E /* VetHelpIOSTests.swift */; };
 		F4717D9E1FBB0E4300B6148E /* VetHelpIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */; };
+		F4D16E961FC6E31900C4EC3D /* AuthTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */; };
 		F4FF99211FC08EAD007C376C /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99201FC08EAD007C376C /* ClientService.swift */; };
 		F4FF99231FC09A66007C376C /* Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99221FC09A66007C376C /* Oauth.swift */; };
+		F4FF99251FC4B3ED007C376C /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99241FC4B3ED007C376C /* LoginNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 		EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetHelpIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		F4344AF01FBCB81A00B750E6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F468FCD61FC4D7010069DC7F /* PetsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableController.swift; sourceTree = "<group>"; };
+		F468FCD91FC4DAB80069DC7F /* PetTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableCell.swift; sourceTree = "<group>"; };
 		F4717D7A1FBB0E4300B6148E /* VetHelpIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VetHelpIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4717D7F1FBB0E4300B6148E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +71,10 @@
 		F4717D991FBB0E4300B6148E /* VetHelpIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VetHelpIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetHelpIOSUITests.swift; sourceTree = "<group>"; };
 		F4717D9F1FBB0E4300B6148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTabBarController.swift; sourceTree = "<group>"; };
 		F4FF99201FC08EAD007C376C /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
 		F4FF99221FC09A66007C376C /* Oauth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oauth.swift; sourceTree = "<group>"; };
+		F4FF99241FC4B3ED007C376C /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F468FCD81FC4DA790069DC7F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F468FCD91FC4DAB80069DC7F /* PetTableCell.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		F4717D711FBB0E4300B6148E = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +161,7 @@
 		F4717D7C1FBB0E4300B6148E /* VetHelpIOS */ = {
 			isa = PBXGroup;
 			children = (
+				F468FCD81FC4DA790069DC7F /* Classes */,
 				F4FF991F1FC08E73007C376C /* API */,
 				F4717DAB1FBB130200B6148E /* Controllers */,
 				F4717D7D1FBB0E4300B6148E /* AppDelegate.swift */,
@@ -180,6 +197,9 @@
 			children = (
 				F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */,
 				F4344AF01FBCB81A00B750E6 /* LoginController.swift */,
+				F4FF99241FC4B3ED007C376C /* LoginNavigationController.swift */,
+				F468FCD61FC4D7010069DC7F /* PetsTableController.swift */,
+				F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -500,8 +520,12 @@
 				F4FF99231FC09A66007C376C /* Oauth.swift in Sources */,
 				F4344AF11FBCB81A00B750E6 /* LoginController.swift in Sources */,
 				F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */,
+				F468FCDA1FC4DAB80069DC7F /* PetTableCell.swift in Sources */,
+				F468FCD71FC4D7010069DC7F /* PetsTableController.swift in Sources */,
 				F4FF99211FC08EAD007C376C /* ClientService.swift in Sources */,
 				F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */,
+				F4FF99251FC4B3ED007C376C /* LoginNavigationController.swift in Sources */,
+				F4D16E961FC6E31900C4EC3D /* AuthTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

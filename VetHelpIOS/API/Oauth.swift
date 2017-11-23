@@ -9,6 +9,5 @@
 import Foundation
 import p2_OAuth2
 class OAuth{
-    static var oauth2:OAuth2PasswordGrant?
-
+    static var oauth2: OAuth2PasswordGrant?
 }
