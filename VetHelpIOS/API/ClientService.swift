@@ -12,31 +12,45 @@ import p2_OAuth2
 import Alamofire
 class ClientService {
     
-    enum Result<T> {
+    enum Result<T, T1> {
         case success(T)
-        case error(String)
+        case error(T1)
     }
     
-    static func loginUser(username: String, password: String) {
-        OAuth.oauth2 = OAuth2PasswordGrant(settings:[
+    static func loginUser(username: String, password: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
+       OAuth.oauth2 = OAuth2PasswordGrant(settings:[
             "client_id": "mobile",
             "client_secret": "MobileSecret",
             "token_uri": "https://vethelpidentity.azurewebsites.net/connect/token",   // code grant only
             "username": username,
             "password": password
             ] as OAuth2JSON)
+        OAuth.oauth2?.username = username
+        OAuth.oauth2?.password = password
+        var isSucceed: Bool?
+        var answer: Any?
         
         OAuth.oauth2?.authorize() { authParameters, error in
             if let params = authParameters {
-                print("Authorized! Access token is in `oauth2.accessToken`")
-                print("Authorized! Additional parameters: \(params)")
+                isSucceed = true
+                answer = params
+                OnCompleted(.success(answer))
+                
             }
             else {
-                print("Authorization was canceled or went wrong: \(error)")   // error will not be nil
+                isSucceed = false
+                answer = error
+                OnCompleted(.error(error))
+                
             }
         
         }
-     
+        
+        
+        
+        OAuth.oauth2?.useKeychain = true
+        OAuth.oauth2?.storeTokensToKeychain()
+        
 
         //oauth2.authConfig.authorizeEmbedded = true
         //oauth2.authConfig.authorizeContext = LoginController()
@@ -47,7 +61,7 @@ class ClientService {
         email: String,
         username: String,
         password: String,
-        reCaptcha: String)-> Result<String>{
+        reCaptcha: String)-> Result<String, Any>{
         
         var success: Bool?
         var nvalue: Any?
@@ -77,7 +91,7 @@ class ClientService {
         if (success)! {
             return .success("Регистрация прошла успешно")
         }
-        else { return .error(nerror as! String) }
+        else { return .error(nerror)}
         
     }
 }
