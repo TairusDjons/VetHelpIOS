@@ -13,30 +13,39 @@ import p2_OAuth2
 
 class LoginController: UIViewController {
     
+    @IBOutlet weak var whileLoginIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
-    
-        
-        super.viewDidLoad()
-        
+        view.addSubview(whileLoginIndicator)
+        whileLoginIndicator.hidesWhenStopped = true
+        if OAuth.oauth2.hasUnexpiredAccessToken() == true {
+            performSegue(withIdentifier: "toMainTabBar", sender: self)
+        }
         // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBAction func goOfflineOnTap(_ sender: Any) {
+        performSegue(withIdentifier: "toOfflineSegue", sender: self)
+    }
     
     @IBAction func loginOnTap(_ sender: Any) {
-        var results: Any?
+        whileLoginIndicator.startAnimating()
+        performSegue(withIdentifier: "toMainTabBar", sender: self)
         ClientService.loginUser(username: usernameTextField!.text!, password: passwordTextField.text!){ result in
-            switch result {
-            case .success(let value):
-                self.performSegue(withIdentifier: "toMainTabBar", sender: self)
-            case .error(let error):
-                self.alertMessage(usrMessage: "Неверный логин или пароль")
+                switch result {
+                case .success(let value):
+                    self.performSegue(withIdentifier: "toMainTabBar", sender: self)
+                case .error(let error):
+                    self.alertMessage(usrMessage: "Неверный логин или пароль")
  
+            }
         }
+        whileLoginIndicator.stopAnimating()
+        
     }
-    }
+    
     
     
     func alertMessage(usrMessage: String) {

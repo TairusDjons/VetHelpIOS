@@ -36,7 +36,7 @@
 	<key>ReCaptchaDomain</key>
 	<string>http://vethelp.azurewebsites.net</string>
 	<key>ReCaptchaKey</key>
-	<string>6Ld8BTQUAAAAAJbzVoJz64RzfzeZuG5AbUm03AA_</string>
+	<string>6LdLjD4UAAAAANF97bmnYpPM93zmqskovgogTIO0</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
