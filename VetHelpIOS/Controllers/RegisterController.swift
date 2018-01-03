@@ -14,15 +14,34 @@ import RxSwift
 
 class RegisterController: UIViewController {
     //MARK: Properties
+    typealias completion = () -> ()
     
+    //Color for controllers
+    var defColor = UIColor(hue: 0, saturation: 0, brightness: 1, alpha: 1.0)
+    var errorBackColor = UIColor(hue: 0, saturation: 0.33, brightness: 1, alpha: 1.0)
+    
+    //Controllers outlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var repeatpassword: UITextField!
+    @IBOutlet weak var usernameError: UILabel!
+    @IBOutlet weak var emailError: UILabel!
+    
+    @IBAction func checkEmailOnTap(_ sender: Any) {
+        checkEmailOrLogin()
+        
+    }
+    
+    
+    @IBAction func checkEmailEvent(_ sender: Any) {
+        checkEmailOrLogin(email: true)
+    }
+    @IBAction func checkLoginEvent(_ sender: Any) {
+        checkEmailOrLogin(login: true)
+    }
     
     fileprivate static let webViewTag = 123
-    
-
     
     // swiftlint:disable force_try
     let recaptcha = try? ReCaptcha()
@@ -63,15 +82,39 @@ class RegisterController: UIViewController {
             alertMessage(usrMessage: "Заполните все поля")
         }
         
-        
         validateAndLogin()
 
     }
     
+    func validateAndLogin() {
+        var captcha: String!
+        
+        recaptcha?.validate(on: view) { [weak self] result in
+            switch result {
+            case.success(let value):
+                captcha=value
+                
+                ClientService.registerUser(email:(self?.emailTextField.text!)!,
+                                           username: (self?.usernameTextField.text!)!,
+                                           password: (self?.passwordTextField.text!)!,
+                                           reCaptcha: captcha!) { result in
+                                            switch result {
+                                            case .success(let value):
+                                                self?.alertMessage(usrMessage: value as! String)
+                                            case .error(let error):
+                                                self?.alertMessage(usrMessage: error as! String)
+                                                
+                                            }
+                }
+            case.failure(let error):
+                print(error)
+            }
+        }
+    }
     
     
     func alertMessage(usrMessage: String) {
-        var alert = UIAlertController(title: "Alert", message: usrMessage, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Alert", message: usrMessage, preferredStyle: UIAlertControllerStyle.alert)
         let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
         
         alert.addAction(action)
@@ -79,29 +122,47 @@ class RegisterController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func validateAndLogin() {
-        var captcha: String!
-        recaptcha?.validate(on: view) { [weak self] result in
-            switch result {
-            case.success(let value):
-                captcha=value
-                switch ClientService.registerUser(email:(self?.emailTextField.text!)!,
-                                                  username: (self?.usernameTextField.text!)!,
-                                                  password: (self?.passwordTextField.text!)!,
-                                                  reCaptcha: captcha!)  {
-                case .success(let value):
-                    print(value)
-                case .error(let error):
-                    print (error)
-                    
-                }
-            case.failure(let error):
-                print(error)
-            }
-        }
-        
+    func setLabel(field: UILabel,
+                       isHidden: Bool? = true,
+                       text: String? = "none",
+                       color: UIColor? = UIColor.white) {
+        field.text = text
+        field.isHidden = isHidden!
+        field.textColor = color
         
     }
+    
+    
+    func checkEmailOrLogin(email: Bool? = false, login: Bool? = false){
+        if (self.emailTextField.hasText && email!) {
+            ClientService.checkEmail(email: self.emailTextField.text!) {result in
+                switch result {
+                case .success(let value):
+                    self.setLabel(field: self.emailError, isHidden: true)
+                    self.emailTextField.backgroundColor = self.defColor
+                case .error(let value):
+                    self.setLabel(field: self.emailError, isHidden: false, text: "Введенная почта занята", color: UIColor.red)
+                    self.emailTextField.backgroundColor = self.errorBackColor
+                    //self.alertMessage(usrMessage: "Введенная почта уже занята")
+                }
+            }
+        }
+        if (self.emailTextField.hasText && login!) {
+        
+            ClientService.checkLogin(login: self.usernameTextField.text!) {result in
+                switch result {
+                case .success(let value):
+                    self.setLabel(field: self.usernameError, isHidden: true)
+                    self.usernameTextField.backgroundColor = self.defColor
+                case .error(let value):
+                    self.setLabel(field: self.usernameError, isHidden: false, text: "Введенное имя занято", color: UIColor.red)
+                    self.usernameTextField.backgroundColor = self.errorBackColor
+                }
+            }
+        }
+    }
+    
+   
     
     /*
      // MARK: - Navigation
