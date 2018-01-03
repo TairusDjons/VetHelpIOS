@@ -10,6 +10,12 @@
 		0B62E0B660B5D1562B14B6A6 /* Pods_VetHelpIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F60BB418FEC00117CE46D0C /* Pods_VetHelpIOS.framework */; };
 		401F08377FDADDD46574A71C /* Pods_VetHelpIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90594B81836F9BBE94B1C4F5 /* Pods_VetHelpIOSUITests.framework */; };
 		C18764FAA5E5561F01FCF0E8 /* Pods_VetHelpIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */; };
+		F40429E31FF2D837001104E9 /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40429E21FF2D837001104E9 /* ResetPasswordController.swift */; };
+		F413CDC71FDED1B100FBEF5B /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F413CDC61FDED1B100FBEF5B /* TagCell.xib */; };
+		F413CDC91FDED74D00FBEF5B /* TagCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413CDC81FDED74D00FBEF5B /* TagCellClass.swift */; };
+		F42E2D3B1FDEF3D300F36A63 /* TagCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E2D3A1FDEF3D300F36A63 /* TagCloudViewController.swift */; };
+		F42E2D3D1FDEFD1100F36A63 /* TagCloudLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E2D3C1FDEFD1100F36A63 /* TagCloudLayout.swift */; };
+		F42E2D3F1FE28D0600F36A63 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E2D3E1FE28D0600F36A63 /* Tag.swift */; };
 		F4344AEF1FBCB7E000B750E6 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */; };
 		F4344AF11FBCB81A00B750E6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4344AF01FBCB81A00B750E6 /* LoginController.swift */; };
 		F468FCD71FC4D7010069DC7F /* PetsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468FCD61FC4D7010069DC7F /* PetsTableController.swift */; };
@@ -22,6 +28,7 @@
 		F4717D931FBB0E4300B6148E /* VetHelpIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D921FBB0E4300B6148E /* VetHelpIOSTests.swift */; };
 		F4717D9E1FBB0E4300B6148E /* VetHelpIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */; };
 		F4D16E961FC6E31900C4EC3D /* AuthTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */; };
+		F4EA15D61FD5E6C100507F9E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA15D51FD5E6C100507F9E /* CheckBox.swift */; };
 		F4FF99211FC08EAD007C376C /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99201FC08EAD007C376C /* ClientService.swift */; };
 		F4FF99231FC09A66007C376C /* Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99221FC09A66007C376C /* Oauth.swift */; };
 		F4FF99251FC4B3ED007C376C /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99241FC4B3ED007C376C /* LoginNavigationController.swift */; };
@@ -54,6 +61,12 @@
 		A32C771C31F1C20C703F9CBD /* Pods-VetHelpIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOSTests/Pods-VetHelpIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0CB25077F87E5CC5FFC7EDD /* Pods-VetHelpIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOS/Pods-VetHelpIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetHelpIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40429E21FF2D837001104E9 /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
+		F413CDC61FDED1B100FBEF5B /* TagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
+		F413CDC81FDED74D00FBEF5B /* TagCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCellClass.swift; sourceTree = "<group>"; };
+		F42E2D3A1FDEF3D300F36A63 /* TagCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCloudViewController.swift; sourceTree = "<group>"; };
+		F42E2D3C1FDEFD1100F36A63 /* TagCloudLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCloudLayout.swift; sourceTree = "<group>"; };
+		F42E2D3E1FE28D0600F36A63 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		F4344AF01FBCB81A00B750E6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F468FCD61FC4D7010069DC7F /* PetsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableController.swift; sourceTree = "<group>"; };
@@ -72,6 +85,7 @@
 		F4717D9D1FBB0E4300B6148E /* VetHelpIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetHelpIOSUITests.swift; sourceTree = "<group>"; };
 		F4717D9F1FBB0E4300B6148E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTabBarController.swift; sourceTree = "<group>"; };
+		F4EA15D51FD5E6C100507F9E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F4FF99201FC08EAD007C376C /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
 		F4FF99221FC09A66007C376C /* Oauth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oauth.swift; sourceTree = "<group>"; };
 		F4FF99241FC4B3ED007C376C /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
@@ -128,10 +142,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F413CDC11FDECF8F00FBEF5B /* TagCloud */ = {
+			isa = PBXGroup;
+			children = (
+				F413CDC61FDED1B100FBEF5B /* TagCell.xib */,
+				F413CDC81FDED74D00FBEF5B /* TagCellClass.swift */,
+				F42E2D3A1FDEF3D300F36A63 /* TagCloudViewController.swift */,
+				F42E2D3C1FDEFD1100F36A63 /* TagCloudLayout.swift */,
+				F42E2D3E1FE28D0600F36A63 /* Tag.swift */,
+			);
+			path = TagCloud;
+			sourceTree = "<group>";
+		};
 		F468FCD81FC4DA790069DC7F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				F468FCD91FC4DAB80069DC7F /* PetTableCell.swift */,
+				F4EA15D51FD5E6C100507F9E /* CheckBox.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -161,6 +188,7 @@
 		F4717D7C1FBB0E4300B6148E /* VetHelpIOS */ = {
 			isa = PBXGroup;
 			children = (
+				F413CDC11FDECF8F00FBEF5B /* TagCloud */,
 				F468FCD81FC4DA790069DC7F /* Classes */,
 				F4FF991F1FC08E73007C376C /* API */,
 				F4717DAB1FBB130200B6148E /* Controllers */,
@@ -200,6 +228,7 @@
 				F4FF99241FC4B3ED007C376C /* LoginNavigationController.swift */,
 				F468FCD61FC4D7010069DC7F /* PetsTableController.swift */,
 				F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */,
+				F40429E21FF2D837001104E9 /* ResetPasswordController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,16 +319,16 @@
 				TargetAttributes = {
 					F4717D791FBB0E4300B6148E = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					F4717D8D1FBB0E4300B6148E = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = F4717D791FBB0E4300B6148E;
 					};
 					F4717D981FBB0E4300B6148E = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = F4717D791FBB0E4300B6148E;
 					};
 				};
@@ -329,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F413CDC71FDED1B100FBEF5B /* TagCell.xib in Resources */,
 				F4717D881FBB0E4300B6148E /* LaunchScreen.storyboard in Resources */,
 				F4717D851FBB0E4300B6148E /* Assets.xcassets in Resources */,
 				F4717D831FBB0E4300B6148E /* Main.storyboard in Resources */,
@@ -518,12 +548,18 @@
 			files = (
 				F4344AEF1FBCB7E000B750E6 /* RegisterController.swift in Sources */,
 				F4FF99231FC09A66007C376C /* Oauth.swift in Sources */,
+				F40429E31FF2D837001104E9 /* ResetPasswordController.swift in Sources */,
 				F4344AF11FBCB81A00B750E6 /* LoginController.swift in Sources */,
+				F4EA15D61FD5E6C100507F9E /* CheckBox.swift in Sources */,
+				F42E2D3D1FDEFD1100F36A63 /* TagCloudLayout.swift in Sources */,
 				F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */,
 				F468FCDA1FC4DAB80069DC7F /* PetTableCell.swift in Sources */,
 				F468FCD71FC4D7010069DC7F /* PetsTableController.swift in Sources */,
 				F4FF99211FC08EAD007C376C /* ClientService.swift in Sources */,
 				F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */,
+				F42E2D3B1FDEF3D300F36A63 /* TagCloudViewController.swift in Sources */,
+				F413CDC91FDED74D00FBEF5B /* TagCellClass.swift in Sources */,
+				F42E2D3F1FE28D0600F36A63 /* Tag.swift in Sources */,
 				F4FF99251FC4B3ED007C376C /* LoginNavigationController.swift in Sources */,
 				F4D16E961FC6E31900C4EC3D /* AuthTabBarController.swift in Sources */,
 			);
@@ -692,11 +728,13 @@
 			baseConfigurationReference = B0CB25077F87E5CC5FFC7EDD /* Pods-VetHelpIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "IOS Developer";
 				INFOPLIST_FILE = VetHelpIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "IOS Developer";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -707,11 +745,13 @@
 			baseConfigurationReference = 75D7E4DB80C7582DADA0B632 /* Pods-VetHelpIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "IOS Developer";
 				INFOPLIST_FILE = VetHelpIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "IOS Developer";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -723,11 +763,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VetHelpIOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VetHelpIOS.app/VetHelpIOS";
@@ -740,11 +782,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VetHelpIOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VetHelpIOS.app/VetHelpIOS";
@@ -756,11 +800,13 @@
 			baseConfigurationReference = 9B67EE16B64A263C9CD968E3 /* Pods-VetHelpIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VetHelpIOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = VetHelpIOS;
@@ -772,11 +818,13 @@
 			baseConfigurationReference = 7DE8DF9B0BD56697297889A7 /* Pods-VetHelpIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VetHelpIOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.master.VetHelpIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = VetHelpIOS;
