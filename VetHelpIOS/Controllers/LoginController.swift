@@ -32,12 +32,12 @@ class LoginController: UIViewController {
     
     @IBAction func loginOnTap(_ sender: Any) {
         whileLoginIndicator.startAnimating()
-        performSegue(withIdentifier: "toMainTabBar", sender: self)
+       // performSegue(withIdentifier: "toMainTabBar", sender: self)
         ClientService.loginUser(username: usernameTextField!.text!, password: passwordTextField.text!){ result in
                 switch result {
-                case .success(let value):
+                case .success(_):
                     self.performSegue(withIdentifier: "toMainTabBar", sender: self)
-                case .error(let error):
+                case .error(_):
                     self.alertMessage(usrMessage: "Неверный логин или пароль")
  
             }
@@ -49,7 +49,7 @@ class LoginController: UIViewController {
     
     
     func alertMessage(usrMessage: String) {
-        var alert = UIAlertController(title: "Alert", message: usrMessage, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Alert", message: usrMessage, preferredStyle: UIAlertControllerStyle.alert)
         let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
         
         alert.addAction(action)
