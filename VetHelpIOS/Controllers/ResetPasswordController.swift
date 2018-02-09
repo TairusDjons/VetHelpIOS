@@ -16,22 +16,25 @@ class ResetPasswordController: UIViewController {
     
     fileprivate static let webViewTag = 123
     
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-   
+    var defColor = UIColor(hue: 0, saturation: 0, brightness: 1, alpha: 1.0)
+    var errorBackColor = UIColor(hue: 0, saturation: 0.33, brightness: 1, alpha: 1.0)
     
-    @IBAction func passwordIsNullEvent(_ sender: Any) {
-        if (passwordTextField.text?.isEmpty)! {
-            passwordTextField.textColor = UIColor.red
-        }    }
+    @IBOutlet weak var emailTextField: UITextField!
+
+    
     @IBAction func emailIsNullEvent(_ sender: Any) {
         if (emailTextField.text?.isEmpty)! {
-            emailTextField.textColor = UIColor.red
+            emailTextField.backgroundColor = errorBackColor
+        }
+        else {
+            emailTextField.backgroundColor = defColor
         }
     }
+
+    
     @IBAction func changePasswordOnTap(_ sender: Any) {
         
-        if ((emailTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)!) {
+        if ((emailTextField.text?.isEmpty)!) {
             alertMessage(usrMessage: "Одно из полей не заполнено", doAction: {return})
         }
         else {
@@ -42,15 +45,11 @@ class ResetPasswordController: UIViewController {
     
     func validateAndChangePassword() {
         var captcha: String!
-        
-       
-        
         recaptcha?.validate(on: view) { [weak self] result in
             switch result {
             case.success(let value):
                 captcha=value
                 ClientService.resetPassword(email:(self?.emailTextField.text!)!,
-                                            newPassword: (self?.passwordTextField.text!)!,
                                             reCaptcha: captcha!) { result in
                                             switch result {
                                             case .success(let value):
@@ -66,7 +65,8 @@ class ResetPasswordController: UIViewController {
             case.failure(let error):
                 print(error)
             }
-        }    }
+        }
+    }
     
     // swiftlint:disable force_try
     let recaptcha = try? ReCaptcha()
