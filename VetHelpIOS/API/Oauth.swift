@@ -12,7 +12,7 @@ class OAuth{
     static var oauth2 = OAuth2PasswordGrant(settings:[
         "client_id": "mobile",
         "client_secret": "MobileSecret",
-        "token_uri": "https://vethelpidentity.azurewebsites.net/connect/token",   // code grant only
+        "token_uri": API.Login,   // code grant only
         "username": "",
         "password": "",
         ] as OAuth2JSON)}

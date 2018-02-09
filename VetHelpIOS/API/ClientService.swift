@@ -48,7 +48,8 @@ class ClientService {
     
     
     static func checkEmail(email: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
-        let api = "https://vethelpidentity.azurewebsites.net/api/Account/IsEmailAvailable/" + email
+        let api = API.IsEmailAvailable + email
+        
         request(api, method: .get, encoding: JSONEncoding.default).responseJSON{ responseJSON in
             switch responseJSON.result {
             case .success(let value):
@@ -57,14 +58,14 @@ class ClientService {
                     OnCompleted(.success("Email passed"))
                 }
                 else {OnCompleted(.error("Wrong email")) }
-                
-            case .failure(let error):
+            case .failure(_):
                 OnCompleted(.error("Problem with connections"))
             }
         }
     }
     static func checkLogin(login: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
-        let api = "https://vethelpidentity.azurewebsites.net/api/Account/IsUsernameAvailable/" + login
+        let api = API.IsUsernameAvailable + login
+        
         request(api, method: .get, encoding: JSONEncoding.default).responseJSON{ responseJSON in
             switch responseJSON.result {
             case .success(let value):
@@ -73,8 +74,7 @@ class ClientService {
                     OnCompleted(.success("Email passed"))
                 }
                 else {OnCompleted(.error("Wrong email")) }
-                
-            case .failure(let error):
+            case .failure(_):
                 OnCompleted(.error("Problem with connections"))
             }
         }
@@ -82,25 +82,22 @@ class ClientService {
     }
     
     static func resetPassword(email: String,
-                              newPassword: String,
                               reCaptcha: String,
                               OnCompleted: @escaping (Result <Any, Any>)->()) {
         let params: [String: Any]=[
-            "email":email,
-            "password":newPassword]
+            "email":email]
         
         let header: [String: String]=[
             "Content-Type":"application/json",
             "g-recaptcha-response":reCaptcha
         ]
-        let api="https://vethelpidentity.azurewebsites.net/api/Account/ForgotPassword"
         
+        let api = API.ForgotPassword
         request(api, method: .post, parameters: params, encoding: JSONEncoding.default, headers: header).responseJSON{ responseJSON in
             switch responseJSON.result {
-            case .success(let value):
+            case .success(_):
                 OnCompleted(.success("На вашу почту пришло сообщение о подтвержедении смены пароля"))
-                
-            case .failure(let error):
+            case .failure(_):
                 OnCompleted(.error("Что-то пошло не так"))
             }
         }
@@ -125,15 +122,14 @@ class ClientService {
             "Content-Type":"application/json",
             "g-recaptcha-response":reCaptcha
         ]
-        let api="https://vethelpidentity.azurewebsites.net/api/Account/Register"
-        
+        let api = API.Register
         request(api, method: .post, parameters: params, encoding: JSONEncoding.default, headers: header).responseJSON{ responseJSON in
             switch responseJSON.result {
-            case .success(let value):
+            case .success(_):
                OnCompleted(.success("Регистрация прошла успешно"))
        
-            case .failure(let error):
-                OnCompleted(.error("Что-то пошло не так"))
+            case .failure(_):
+               OnCompleted(.error("Что-то пошло не так"))
             }
         }
        
@@ -141,7 +137,6 @@ class ClientService {
     }
     
     static func logout() {
-        OAuth.oauth2.forgetClient()
         OAuth.oauth2.forgetTokens()
         let storage = HTTPCookieStorage.shared
         storage.cookies?.forEach() { storage.deleteCookie($0) }    }
