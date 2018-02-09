@@ -33,12 +33,12 @@ open class ReCaptcha: ReCaptchaWebViewManager {
         fileprivate var url: String {
             switch self {
             case .default: return "https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-            case .alternate: return "https://www.recaptcha.net/recaptcha/api.js"
+            case .alternate: return "https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit"
             }
         }
     }
 
-    /** Internal data model for DI in unit tests
+    /** Internal data model for CI in unit tests
      */
     struct Config {
         /// The raw unformated HTML file content
@@ -93,7 +93,7 @@ open class ReCaptcha: ReCaptchaWebViewManager {
 
             self.html = rawHTML
             self.apiKey = apiKey
-            self.baseURL = domain
+            self.baseURL = Config.fixSchemeIfNeeded(for: domain)
         }
     }
 
@@ -126,5 +126,31 @@ open class ReCaptcha: ReCaptchaWebViewManager {
 
         let config = try Config(apiKey: apiKey, infoPlistKey: plistApiKey, baseURL: baseURL, infoPlistURL: plistDomain)
         super.init(html: config.html, apiKey: config.apiKey, baseURL: config.baseURL, endpoint: endpoint.url)
+    }
+}
+
+// MARK: - Private Methods
+
+private extension ReCaptcha.Config {
+    /**
+     - parameter url: The URL to be fixed
+     - returns: An URL with scheme
+
+     If the given URL has no scheme, prepends `http://` to it and return the fixed URL.
+     */
+    static func fixSchemeIfNeeded(for url: URL) -> URL {
+        guard url.scheme?.isEmpty != false else {
+            return url
+        }
+
+#if DEBUG
+        print("⚠️ WARNING! Protocol not found for ReCaptcha domain (\(url))! You should add http:// or https:// to it!")
+#endif
+
+        if let fixedURL = URL(string: "http://" + url.absoluteString) {
+            return fixedURL
+        }
+
+        return url
     }
 }
