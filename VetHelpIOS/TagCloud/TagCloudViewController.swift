@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class TagCloudViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    let TAGS = ["Tech", "Design", "Humor", "Travel", "Music", "Writing", "Social Media", "Life", "Education", "Edtech", "Education Reform", "Photography", "Startup", "Poetry", "Women In Tech", "Female Founders", "Business", "Fiction", "Love", "Food", "Sports"]
+    let TAGS = ["symptom1", "symptom2", "symptom3", "symptom4", "symptom5", "symptom6"]
     var sizingCell: TagCell?
     var tags = [Tag]()
     
