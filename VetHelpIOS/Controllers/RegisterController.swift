@@ -12,7 +12,7 @@ import ReCaptcha
 import Result
 import RxSwift
 
-class RegisterController: UIViewController {
+class RegisterController: UIViewController{
     //MARK: Properties
     typealias completion = () -> ()
     
