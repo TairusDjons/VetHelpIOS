@@ -1,29 +1,46 @@
 PODS:
   - Alamofire (4.6.0)
+  - DynamicBlurView (2.0.2)
+  - GoogleMaps (2.6.0):
+    - GoogleMaps/Maps (= 2.6.0)
+  - GoogleMaps/Base (2.6.0)
+  - GoogleMaps/Maps (2.6.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
   - p2.OAuth2 (3.0.3)
-  - ReCaptcha/Core (1.0.1):
+  - PopupDialog (0.7.0):
+    - DynamicBlurView (~> 2.0)
+  - ReCaptcha/Core (1.1):
     - Result (~> 3.0)
-  - ReCaptcha/RxSwift (1.0.1):
+  - ReCaptcha/RxSwift (1.1):
     - ReCaptcha/Core
     - RxSwift (~> 4.0)
   - Result (3.2.4)
-  - RxSwift (4.0.0)
+  - RxSwift (4.1.2)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - GoogleMaps
+  - GooglePlaces
   - p2.OAuth2 (~> 3.0)
+  - PopupDialog (~> 0.7)
   - ReCaptcha/RxSwift
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
   p2.OAuth2: 63d8d3e366ac2c43bfe8bfa13b42cfeb908c314e
-  ReCaptcha: 495b10659cd85206d723d52911e873f032bc21d9
+  PopupDialog: 4abc6db5b22b7c8029e2162bde8891ee6aa4b6c8
+  ReCaptcha: d7028d97ade7b524389bf8251976c9986c62fce5
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: ca3388a924217bcfdab1a64b81df48e4503be80e
+PODFILE CHECKSUM: 8d2cde949298ca6eedc6c0c43b32f7af07595120
 
 COCOAPODS: 1.3.1

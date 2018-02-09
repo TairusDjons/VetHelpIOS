@@ -7,6 +7,9 @@ use_frameworks!
 pod 'SwiftyJSON’
 pod 'p2.OAuth2', '~> 3.0'
 pod 'Alamofire', '~> 4.5'
+pod 'PopupDialog', '~> 0.7'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
 
 pod ‘ReCaptcha/RxSwift’
 # Pods for VetHelpIOS
