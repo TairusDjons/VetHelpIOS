@@ -17,8 +17,7 @@ class RegisterController: UIViewController{
     typealias completion = () -> ()
     
     //Color for controllers
-    var defColor = UIColor(hue: 0, saturation: 0, brightness: 1, alpha: 1.0)
-    var errorBackColor = UIColor(hue: 0, saturation: 0.33, brightness: 1, alpha: 1.0)
+    
     
     //Controllers outlets
     @IBOutlet weak var emailTextField: UITextField!
@@ -94,13 +93,15 @@ class RegisterController: UIViewController{
             case.success(let value):
                 captcha=value
                 
-                ClientService.registerUser(email:(self?.emailTextField.text!)!,
+                ClientService.shared.registerUser(email:(self?.emailTextField.text!)!,
                                            username: (self?.usernameTextField.text!)!,
                                            password: (self?.passwordTextField.text!)!,
                                            reCaptcha: captcha!) { result in
                                             switch result {
                                             case .success(let value):
-                                                self?.alertMessage(usrMessage: value as! String)
+                                                self?.alertMessage(usrMessage: "Регистрация прошла успешно") {alert in self?.performSegue(withIdentifier: "backToLogin", sender: self)
+                                                }
+                                                
                                             case .error(let error):
                                                 self?.alertMessage(usrMessage: error as! String)
                                                 
@@ -113,7 +114,7 @@ class RegisterController: UIViewController{
     }
     
     
-    func alertMessage(usrMessage: String) {
+    func alertMessage(usrMessage: String, usrHandler: ((UIAlertAction)->Void)? = nil) {
         let alert = UIAlertController(title: "Alert", message: usrMessage, preferredStyle: UIAlertControllerStyle.alert)
         let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
         
@@ -135,28 +136,28 @@ class RegisterController: UIViewController{
     
     func checkEmailOrLogin(email: Bool? = false, login: Bool? = false){
         if (self.emailTextField.hasText && email!) {
-            ClientService.checkEmail(email: self.emailTextField.text!) {result in
+            ClientService.shared.checkEmail(email: self.emailTextField.text!) {result in
                 switch result {
                 case .success(let value):
                     self.setLabel(field: self.emailError, isHidden: true)
-                    self.emailTextField.backgroundColor = self.defColor
+                    self.emailTextField.backgroundColor = Colors.defColor
                 case .error(let value):
-                    self.setLabel(field: self.emailError, isHidden: false, text: "Введенная почта занята", color: UIColor.red)
-                    self.emailTextField.backgroundColor = self.errorBackColor
+                    self.setLabel(field: self.emailError, isHidden: false, text: "Введенная почта занята", color: Colors.errorTextColor)
+                    self.emailTextField.backgroundColor = Colors.errorBackColor
                     //self.alertMessage(usrMessage: "Введенная почта уже занята")
                 }
             }
         }
         if (self.emailTextField.hasText && login!) {
         
-            ClientService.checkLogin(login: self.usernameTextField.text!) {result in
+            ClientService.shared.checkLogin(login: self.usernameTextField.text!) {result in
                 switch result {
                 case .success(let value):
                     self.setLabel(field: self.usernameError, isHidden: true)
-                    self.usernameTextField.backgroundColor = self.defColor
+                    self.usernameTextField.backgroundColor = Colors.defColor
                 case .error(let value):
-                    self.setLabel(field: self.usernameError, isHidden: false, text: "Введенное имя занято", color: UIColor.red)
-                    self.usernameTextField.backgroundColor = self.errorBackColor
+                    self.setLabel(field: self.usernameError, isHidden: false, text: "Введенное имя занято", color: Colors.errorTextColor)
+                    self.usernameTextField.backgroundColor = Colors.errorBackColor
                 }
             }
         }

@@ -10,14 +10,10 @@ import Foundation
 import UIKit
 import p2_OAuth2
 import Alamofire
-class ClientService {
-    
-    enum Result<T, T1> {
-        case success(T)
-        case error(T1)
-    }
-    
-    static func loginUser(username: String, password: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
+class ClientService: BaseService{
+
+    static let shared = ClientService()
+    func loginUser(username: String, password: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
         OAuth.oauth2.username = username
         OAuth.oauth2.password = password
         var answer: Any?
@@ -33,9 +29,6 @@ class ClientService {
             }
         
         }
-        
-        
-        
         OAuth.oauth2.useKeychain = true
         //OAuth.oauth2.storeTokensToKeychain()
         
@@ -44,67 +37,35 @@ class ClientService {
         //oauth2.authConfig.authorizeContext = LoginController()
         
     }
+
     
-    
-    
-    static func checkEmail(email: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
-        let api = API.IsEmailAvailable + email
+    func checkEmail(email: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
+        let api = API.Base + API.IsEmailAvailable
         
-        request(api, method: .get, encoding: JSONEncoding.default).responseJSON{ responseJSON in
-            switch responseJSON.result {
-            case .success(let value):
-                let success = value as! Bool
-                if success {
-                    OnCompleted(.success("Email passed"))
-                }
-                else {OnCompleted(.error("Wrong email")) }
-            case .failure(_):
-                OnCompleted(.error("Problem with connections"))
-            }
-        }
+        makeRequest(url: api, method: .get, OnCompleted: OnCompleted)
     }
-    static func checkLogin(login: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
-        let api = API.IsUsernameAvailable + login
+    func checkLogin(login: String, OnCompleted: @escaping (Result<Any, Any>)->()) {
+        let api = API.Base + API.IsUsernameAvailable + login
         
-        request(api, method: .get, encoding: JSONEncoding.default).responseJSON{ responseJSON in
-            switch responseJSON.result {
-            case .success(let value):
-                let success = value as! Bool
-                if success {
-                    OnCompleted(.success("Email passed"))
-                }
-                else {OnCompleted(.error("Wrong email")) }
-            case .failure(_):
-                OnCompleted(.error("Problem with connections"))
-            }
-        }
-        
+        makeRequest(url: api, method: .get, OnCompleted: OnCompleted)
     }
     
-    static func resetPassword(email: String,
+    func resetPassword(email: String,
                               reCaptcha: String,
                               OnCompleted: @escaping (Result <Any, Any>)->()) {
         let params: [String: Any]=[
             "email":email]
         
         let header: [String: String]=[
-            "Content-Type":"application/json",
             "g-recaptcha-response":reCaptcha
         ]
         
-        let api = API.ForgotPassword
-        request(api, method: .post, parameters: params, encoding: JSONEncoding.default, headers: header).responseJSON{ responseJSON in
-            switch responseJSON.result {
-            case .success(_):
-                OnCompleted(.success("На вашу почту пришло сообщение о подтвержедении смены пароля"))
-            case .failure(_):
-                OnCompleted(.error("Что-то пошло не так"))
-            }
-        }
+        let api = API.Base + API.ForgotPassword
+        makeRequest(url: api, method: .post, parameters: params, headers: header, OnCompleted: OnCompleted)
     }
     
     
-    static func registerUser(
+    	func registerUser(
         email: String,
         username: String,
         password: String,
@@ -119,21 +80,18 @@ class ClientService {
         ]
         
         let header: [String: String]=[
-            "Content-Type":"application/json",
             "g-recaptcha-response":reCaptcha
         ]
-        let api = API.Register
-        request(api, method: .post, parameters: params, encoding: JSONEncoding.default, headers: header).responseJSON{ responseJSON in
-            switch responseJSON.result {
-            case .success(_):
-               OnCompleted(.success("Регистрация прошла успешно"))
-       
-            case .failure(_):
-               OnCompleted(.error("Что-то пошло не так"))
-            }
-        }
-       
-        
+        let api = API.Base + API.Register
+        makeRequest(url: api, method: .post, parameters: params, headers: header, OnCompleted: OnCompleted)
+    }
+    
+    func getUserInfo(OnCompleted: @escaping (Result<Any, Any>)->()) {
+        let api = API.Base + API.Info
+        let params: [String: Any] = [
+            "Authorization": "Bearer " + OAuth.oauth2.accessToken!
+        ]
+        makeRequest(url: api, method: .get, parameters: params, OnCompleted: OnCompleted)
     }
     
     static func logout() {

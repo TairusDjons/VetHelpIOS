@@ -7,13 +7,15 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class PetsTableController: UITableViewController {
-    var pets = ["dogy"]
-    
+    var pets: [Pet] = []
+    var pet: Pet?
+  
+    @IBOutlet weak var gettingPetIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getPets()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -21,6 +23,27 @@ class PetsTableController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    
+    func getPets() {
+        gettingPetIndicator.startAnimating()
+        UserPetService.shared.get() {
+            result in
+            switch result {
+            case .success(let value):
+                let json = JSON(value)
+                for (index, subJson) in json {
+                    let pet = Pet(json: subJson)
+                    self.pets.append(pet!)
+                }
+            case .error(let value):
+                print("something wrong")
+            }
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as! EditPetViewController
+        controller.pet = pet!
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,16 +58,22 @@ class PetsTableController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return pets.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PetTableCell
+        cell.petnameTextView.text = pets[indexPath.row].name
+        
         // Configure the cell...
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pet = pets[indexPath.row]
+        performSegue(withIdentifier: "toEditSegue", sender: self)
     }
     
 

@@ -11,7 +11,6 @@
 		401F08377FDADDD46574A71C /* Pods_VetHelpIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90594B81836F9BBE94B1C4F5 /* Pods_VetHelpIOSUITests.framework */; };
 		C18764FAA5E5561F01FCF0E8 /* Pods_VetHelpIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */; };
 		F40429E31FF2D837001104E9 /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40429E21FF2D837001104E9 /* ResetPasswordController.swift */; };
-		F412E41D202B564300A9DB17 /* MapTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F412E41C202B564300A9DB17 /* MapTestController.swift */; };
 		F413CDC71FDED1B100FBEF5B /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F413CDC61FDED1B100FBEF5B /* TagCell.xib */; };
 		F413CDC91FDED74D00FBEF5B /* TagCellClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413CDC81FDED74D00FBEF5B /* TagCellClass.swift */; };
 		F42E2D3B1FDEF3D300F36A63 /* TagCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E2D3A1FDEF3D300F36A63 /* TagCloudViewController.swift */; };
@@ -19,8 +18,19 @@
 		F42E2D3F1FE28D0600F36A63 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E2D3E1FE28D0600F36A63 /* Tag.swift */; };
 		F4344AEF1FBCB7E000B750E6 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */; };
 		F4344AF11FBCB81A00B750E6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4344AF01FBCB81A00B750E6 /* LoginController.swift */; };
+		F458A16520448B40003C6D6D /* UserPetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A16420448B3F003C6D6D /* UserPetService.swift */; };
+		F458A16820448B67003C6D6D /* Breeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A16720448B67003C6D6D /* Breeds.swift */; };
+		F458A16B20448B91003C6D6D /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A16A20448B91003C6D6D /* AnimalType.swift */; };
+		F458A16E20448EF4003C6D6D /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A16D20448EF4003C6D6D /* Pet.swift */; };
+		F458A1702044903A003C6D6D /* PetJsonParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A16F2044903A003C6D6D /* PetJsonParse.swift */; };
+		F458A17220449250003C6D6D /* BreedJsonParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A17120449250003C6D6D /* BreedJsonParse.swift */; };
+		F458A17420449317003C6D6D /* AnimalTypeJsonParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A17320449317003C6D6D /* AnimalTypeJsonParse.swift */; };
+		F458A176204494C5003C6D6D /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A175204494C5003C6D6D /* BaseService.swift */; };
+		F458A17820449FAB003C6D6D /* pets-background2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = F458A17720449FAA003C6D6D /* pets-background2-2.png */; };
+		F458A17B2044A3EC003C6D6D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A17A2044A3EC003C6D6D /* Colors.swift */; };
+		F458A17D2044A7FE003C6D6D /* EditPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A17C2044A7FE003C6D6D /* EditPetViewController.swift */; };
+		F458A17F2044ABC6003C6D6D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458A17E2044ABC6003C6D6D /* User.swift */; };
 		F45A69FD201505FC00194868 /* APIconst.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45A69FC201505FB00194868 /* APIconst.swift */; };
-		F4643EC72018A98B009AB2E5 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4643EC62018A98B009AB2E5 /* Pet.swift */; };
 		F4643EC92018AD65009AB2E5 /* TempPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4643EC82018AD65009AB2E5 /* TempPet.swift */; };
 		F4643ECB2018B6B5009AB2E5 /* StartDiagnosticController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4643ECA2018B6B5009AB2E5 /* StartDiagnosticController.swift */; };
 		F468FCD71FC4D7010069DC7F /* PetsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F468FCD61FC4D7010069DC7F /* PetsTableController.swift */; };
@@ -35,7 +45,6 @@
 		F4791E77202DA3ED00F99C44 /* DiagnosticResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4791E76202DA3ED00F99C44 /* DiagnosticResultController.swift */; };
 		F4791E79202DB09300F99C44 /* MyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4791E78202DB09300F99C44 /* MyProfileController.swift */; };
 		F4D16E961FC6E31900C4EC3D /* AuthTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */; };
-		F4EA15D61FD5E6C100507F9E /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA15D51FD5E6C100507F9E /* CheckBox.swift */; };
 		F4FF99211FC08EAD007C376C /* ClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99201FC08EAD007C376C /* ClientService.swift */; };
 		F4FF99231FC09A66007C376C /* Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99221FC09A66007C376C /* Oauth.swift */; };
 		F4FF99251FC4B3ED007C376C /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF99241FC4B3ED007C376C /* LoginNavigationController.swift */; };
@@ -69,7 +78,6 @@
 		B0CB25077F87E5CC5FFC7EDD /* Pods-VetHelpIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetHelpIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetHelpIOS/Pods-VetHelpIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EFE352874E38F5C7D4F532CF /* Pods_VetHelpIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetHelpIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40429E21FF2D837001104E9 /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
-		F412E41C202B564300A9DB17 /* MapTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTestController.swift; sourceTree = "<group>"; };
 		F413CDC61FDED1B100FBEF5B /* TagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
 		F413CDC81FDED74D00FBEF5B /* TagCellClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCellClass.swift; sourceTree = "<group>"; };
 		F42E2D3A1FDEF3D300F36A63 /* TagCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCloudViewController.swift; sourceTree = "<group>"; };
@@ -77,8 +85,19 @@
 		F42E2D3E1FE28D0600F36A63 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		F4344AEE1FBCB7E000B750E6 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		F4344AF01FBCB81A00B750E6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F458A16420448B3F003C6D6D /* UserPetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPetService.swift; sourceTree = "<group>"; };
+		F458A16720448B67003C6D6D /* Breeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeds.swift; sourceTree = "<group>"; };
+		F458A16A20448B91003C6D6D /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
+		F458A16D20448EF4003C6D6D /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		F458A16F2044903A003C6D6D /* PetJsonParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetJsonParse.swift; sourceTree = "<group>"; };
+		F458A17120449250003C6D6D /* BreedJsonParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedJsonParse.swift; sourceTree = "<group>"; };
+		F458A17320449317003C6D6D /* AnimalTypeJsonParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTypeJsonParse.swift; sourceTree = "<group>"; };
+		F458A175204494C5003C6D6D /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		F458A17720449FAA003C6D6D /* pets-background2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pets-background2-2.png"; path = "../../../Downloads/pets-background2-2.png"; sourceTree = "<group>"; };
+		F458A17A2044A3EC003C6D6D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F458A17C2044A7FE003C6D6D /* EditPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPetViewController.swift; sourceTree = "<group>"; };
+		F458A17E2044ABC6003C6D6D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F45A69FC201505FB00194868 /* APIconst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIconst.swift; sourceTree = "<group>"; };
-		F4643EC62018A98B009AB2E5 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		F4643EC82018AD65009AB2E5 /* TempPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempPet.swift; sourceTree = "<group>"; };
 		F4643ECA2018B6B5009AB2E5 /* StartDiagnosticController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDiagnosticController.swift; sourceTree = "<group>"; };
 		F468FCD61FC4D7010069DC7F /* PetsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableController.swift; sourceTree = "<group>"; };
@@ -99,7 +118,6 @@
 		F4791E76202DA3ED00F99C44 /* DiagnosticResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticResultController.swift; sourceTree = "<group>"; };
 		F4791E78202DB09300F99C44 /* MyProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileController.swift; sourceTree = "<group>"; };
 		F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTabBarController.swift; sourceTree = "<group>"; };
-		F4EA15D51FD5E6C100507F9E /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F4FF99201FC08EAD007C376C /* ClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientService.swift; sourceTree = "<group>"; };
 		F4FF99221FC09A66007C376C /* Oauth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oauth.swift; sourceTree = "<group>"; };
 		F4FF99241FC4B3ED007C376C /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
@@ -168,13 +186,51 @@
 			path = TagCloud;
 			sourceTree = "<group>";
 		};
+		F458A16620448B4B003C6D6D /* AnimalTypes */ = {
+			isa = PBXGroup;
+			children = (
+				F458A16A20448B91003C6D6D /* AnimalType.swift */,
+				F458A17320449317003C6D6D /* AnimalTypeJsonParse.swift */,
+			);
+			path = AnimalTypes;
+			sourceTree = "<group>";
+		};
+		F458A16920448B71003C6D6D /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				F458A16720448B67003C6D6D /* Breeds.swift */,
+				F458A17120449250003C6D6D /* BreedJsonParse.swift */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		F458A16C20448EE5003C6D6D /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				F458A16D20448EF4003C6D6D /* Pet.swift */,
+				F458A16F2044903A003C6D6D /* PetJsonParse.swift */,
+			);
+			path = Pet;
+			sourceTree = "<group>";
+		};
+		F458A1792044A3D6003C6D6D /* DesignAndStyle */ = {
+			isa = PBXGroup;
+			children = (
+				F458A17A2044A3EC003C6D6D /* Colors.swift */,
+			);
+			path = DesignAndStyle;
+			sourceTree = "<group>";
+		};
 		F468FCD81FC4DA790069DC7F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F458A1792044A3D6003C6D6D /* DesignAndStyle */,
+				F458A16C20448EE5003C6D6D /* Pet */,
+				F458A16920448B71003C6D6D /* Breeds */,
+				F458A16620448B4B003C6D6D /* AnimalTypes */,
 				F468FCD91FC4DAB80069DC7F /* PetTableCell.swift */,
-				F4EA15D51FD5E6C100507F9E /* CheckBox.swift */,
-				F4643EC62018A98B009AB2E5 /* Pet.swift */,
 				F4643EC82018AD65009AB2E5 /* TempPet.swift */,
+				F458A17E2044ABC6003C6D6D /* User.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -212,6 +268,7 @@
 				F4717D7F1FBB0E4300B6148E /* ViewController.swift */,
 				F4717D811FBB0E4300B6148E /* Main.storyboard */,
 				F4717D841FBB0E4300B6148E /* Assets.xcassets */,
+				F458A17720449FAA003C6D6D /* pets-background2-2.png */,
 				F4717D861FBB0E4300B6148E /* LaunchScreen.storyboard */,
 				F4717D891FBB0E4300B6148E /* Info.plist */,
 			);
@@ -246,9 +303,9 @@
 				F4D16E951FC6E31900C4EC3D /* AuthTabBarController.swift */,
 				F40429E21FF2D837001104E9 /* ResetPasswordController.swift */,
 				F4643ECA2018B6B5009AB2E5 /* StartDiagnosticController.swift */,
-				F412E41C202B564300A9DB17 /* MapTestController.swift */,
 				F4791E76202DA3ED00F99C44 /* DiagnosticResultController.swift */,
 				F4791E78202DB09300F99C44 /* MyProfileController.swift */,
+				F458A17C2044A7FE003C6D6D /* EditPetViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -259,6 +316,8 @@
 				F4FF99201FC08EAD007C376C /* ClientService.swift */,
 				F4FF99221FC09A66007C376C /* Oauth.swift */,
 				F45A69FC201505FB00194868 /* APIconst.swift */,
+				F458A16420448B3F003C6D6D /* UserPetService.swift */,
+				F458A175204494C5003C6D6D /* BaseService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -380,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F413CDC71FDED1B100FBEF5B /* TagCell.xib in Resources */,
+				F458A17820449FAB003C6D6D /* pets-background2-2.png in Resources */,
 				F4717D881FBB0E4300B6148E /* LaunchScreen.storyboard in Resources */,
 				F4717D851FBB0E4300B6148E /* Assets.xcassets in Resources */,
 				F4717D831FBB0E4300B6148E /* Main.storyboard in Resources */,
@@ -577,24 +637,32 @@
 			files = (
 				F4344AEF1FBCB7E000B750E6 /* RegisterController.swift in Sources */,
 				F4791E79202DB09300F99C44 /* MyProfileController.swift in Sources */,
+				F458A17220449250003C6D6D /* BreedJsonParse.swift in Sources */,
 				F4643ECB2018B6B5009AB2E5 /* StartDiagnosticController.swift in Sources */,
+				F458A17F2044ABC6003C6D6D /* User.swift in Sources */,
+				F458A16B20448B91003C6D6D /* AnimalType.swift in Sources */,
 				F4643EC92018AD65009AB2E5 /* TempPet.swift in Sources */,
+				F458A16E20448EF4003C6D6D /* Pet.swift in Sources */,
 				F4FF99231FC09A66007C376C /* Oauth.swift in Sources */,
+				F458A176204494C5003C6D6D /* BaseService.swift in Sources */,
 				F4791E77202DA3ED00F99C44 /* DiagnosticResultController.swift in Sources */,
 				F40429E31FF2D837001104E9 /* ResetPasswordController.swift in Sources */,
-				F4643EC72018A98B009AB2E5 /* Pet.swift in Sources */,
+				F458A17420449317003C6D6D /* AnimalTypeJsonParse.swift in Sources */,
+				F458A16520448B40003C6D6D /* UserPetService.swift in Sources */,
 				F4344AF11FBCB81A00B750E6 /* LoginController.swift in Sources */,
-				F4EA15D61FD5E6C100507F9E /* CheckBox.swift in Sources */,
+				F458A16820448B67003C6D6D /* Breeds.swift in Sources */,
 				F45A69FD201505FC00194868 /* APIconst.swift in Sources */,
+				F458A17D2044A7FE003C6D6D /* EditPetViewController.swift in Sources */,
 				F42E2D3D1FDEFD1100F36A63 /* TagCloudLayout.swift in Sources */,
 				F4717D801FBB0E4300B6148E /* ViewController.swift in Sources */,
 				F468FCDA1FC4DAB80069DC7F /* PetTableCell.swift in Sources */,
 				F468FCD71FC4D7010069DC7F /* PetsTableController.swift in Sources */,
+				F458A17B2044A3EC003C6D6D /* Colors.swift in Sources */,
+				F458A1702044903A003C6D6D /* PetJsonParse.swift in Sources */,
 				F4FF99211FC08EAD007C376C /* ClientService.swift in Sources */,
 				F4717D7E1FBB0E4300B6148E /* AppDelegate.swift in Sources */,
 				F42E2D3B1FDEF3D300F36A63 /* TagCloudViewController.swift in Sources */,
 				F413CDC91FDED74D00FBEF5B /* TagCellClass.swift in Sources */,
-				F412E41D202B564300A9DB17 /* MapTestController.swift in Sources */,
 				F42E2D3F1FE28D0600F36A63 /* Tag.swift in Sources */,
 				F4FF99251FC4B3ED007C376C /* LoginNavigationController.swift in Sources */,
 				F4D16E961FC6E31900C4EC3D /* AuthTabBarController.swift in Sources */,

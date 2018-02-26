@@ -7,11 +7,22 @@
 //
 
 import UIKit
-
+import SwiftyJSON
 class ViewController: UIViewController {
 
+    @IBOutlet weak var usernameTextView: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        ClientService.shared.getUserInfo() {
+            result in
+            switch result {
+            case .success(let value):
+                let json = JSON(value)
+                self.usernameTextView.setTitle(json["name"].stringValue, for: .normal)
+            case .error(let value):
+                self.usernameTextView.setTitle("User", for: .normal)
+            }
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 

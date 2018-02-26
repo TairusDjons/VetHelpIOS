@@ -33,16 +33,18 @@ class LoginController: UIViewController {
     @IBAction func loginOnTap(_ sender: Any) {
         whileLoginIndicator.startAnimating()
        // performSegue(withIdentifier: "toMainTabBar", sender: self)
-        ClientService.loginUser(username: usernameTextField!.text!, password: passwordTextField.text!){ result in
+        ClientService.shared.loginUser(username: usernameTextField!.text!, password: passwordTextField.text!){ result in
                 switch result {
                 case .success(_):
                     self.performSegue(withIdentifier: "toMainTabBar", sender: self)
+                    self.whileLoginIndicator.stopAnimating()
                 case .error(_):
                     self.alertMessage(usrMessage: "Неверный логин или пароль")
+                    self.whileLoginIndicator.stopAnimating()
  
             }
         }
-        whileLoginIndicator.stopAnimating()
+        
         
     }
     

@@ -49,7 +49,7 @@ class ResetPasswordController: UIViewController {
             switch result {
             case.success(let value):
                 captcha=value
-                ClientService.resetPassword(email:(self?.emailTextField.text!)!,
+                ClientService.shared.resetPassword(email:(self?.emailTextField.text!)!,
                                             reCaptcha: captcha!) { result in
                                             switch result {
                                             case .success(let value):

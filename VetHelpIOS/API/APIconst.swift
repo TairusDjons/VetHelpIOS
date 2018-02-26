@@ -8,9 +8,19 @@
 
 import Foundation
 public class API {
-    static let IsEmailAvailable = "https://vethelp.azurewebsites.net/api/Account/IsEmailAvailable/"
-    static let IsUsernameAvailable = "https://vethelp.azurewebsites.net/api/Account/IsUsernameAvailable/"
-    static let ForgotPassword = "https://vethelp.azurewebsites.net/api/Account/ForgotPassword"
-    static let Register = "https://vethelp.azurewebsites.net/api/Account/Register"
-    static let Login = "https://vethelp.azurewebsites.net/connect/token"
+    // Base
+    static let Base = "https://vethelp.azurewebsites.net/"
+    
+    // Account endpoints
+    static let IsEmailAvailable = "api/Account/IsEmailAvailable/"
+    static let IsUsernameAvailable = "api/Account/IsUsernameAvailable/"
+    static let ForgotPassword = "api/Account/ForgotPassword"
+    static let Register = "api/Account/Register"
+    static let Login = "connect/token"
+    static let Info = "connect/userinfo"
+    
+    // Pet endpoints
+    static let AnimalTypes = "api/AnimalTypes"
+    static let Breeds = "api/Breeds"
+    static let UserPet = "api/UserPet"
 }

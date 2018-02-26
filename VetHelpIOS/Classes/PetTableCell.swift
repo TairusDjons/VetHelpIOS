@@ -10,6 +10,7 @@ import UIKit
 
 class PetTableCell: UITableViewCell {
 
+    @IBOutlet weak var petnameTextView: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

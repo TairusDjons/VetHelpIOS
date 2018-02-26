@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/RegisterController.swift"
-            timestampString = "538507357.942028"
+            timestampString = "541378946.188935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "checkEmailOrLogin(email:login:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/LoginController.swift"
-            timestampString = "539873329.7247109"
+            timestampString = "541378946.189227"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/API/ClientService.swift"
-            timestampString = "539873329.725479"
+            timestampString = "541378946.189564"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "loginUser(username:password:OnCompleted:)"
             landmarkType = "7">
             <Locations>
@@ -102,30 +102,30 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "static VetHelpIOS.ClientService.loginUser(username: Swift.String, password: Swift.String, OnCompleted: (VetHelpIOS.ClientService.Result&lt;Any, Any&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "VetHelpIOS.ClientService.loginUser(username: Swift.String, password: Swift.String, OnCompleted: (VetHelpIOS.BaseService.Result&lt;Any, Any&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "VetHelpIOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vetdev1/Desktop/VetHelpIOS/VetHelpIOS/API/ClientService.swift"
-                  timestampString = "539874376.832461"
+                  timestampString = "541378961.409695"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "25"
-                  endingLineNumber = "25"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
                   offsetFromSymbolStart = "566">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, Swift.Optional&lt;p2_OAuth2.OAuth2Error&gt;) -&gt; () in static VetHelpIOS.ClientService.loginUser(username: Swift.String, password: Swift.String, OnCompleted: (VetHelpIOS.ClientService.Result&lt;Any, Any&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, Swift.Optional&lt;p2_OAuth2.OAuth2Error&gt;) -&gt; () in VetHelpIOS.ClientService.loginUser(username: Swift.String, password: Swift.String, OnCompleted: (VetHelpIOS.BaseService.Result&lt;Any, Any&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "VetHelpIOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vetdev1/Desktop/VetHelpIOS/VetHelpIOS/API/ClientService.swift"
-                  timestampString = "539874376.836879"
+                  timestampString = "541378961.415451"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
                   offsetFromSymbolStart = "107">
                </Location>
             </Locations>
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/LoginController.swift"
-            timestampString = "539873329.7261651"
+            timestampString = "541378946.189674"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/RegisterController.swift"
-            timestampString = "538507357.9428639"
+            timestampString = "541378946.190164"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "checkEmailOrLogin(email:login:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,59 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/API/ClientService.swift"
-            timestampString = "539873329.727108"
+            timestampString = "541378946.1902879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "resetPassword(email:reCaptcha:OnCompleted:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static VetHelpIOS.ClientService.resetPassword(email: Swift.String, reCaptcha: Swift.String, OnCompleted: (VetHelpIOS.ClientService.Result&lt;Any, Any&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "VetHelpIOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vetdev1/Desktop/VetHelpIOS/VetHelpIOS/API/ClientService.swift"
-                  timestampString = "539874376.861672"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "96"
-                  endingLineNumber = "96"
-                  offsetFromSymbolStart = "731">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in static VetHelpIOS.ClientService.resetPassword(email: Swift.String, reCaptcha: Swift.String, OnCompleted: (VetHelpIOS.ClientService.Result&lt;Any, Any&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "VetHelpIOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vetdev1/Desktop/VetHelpIOS/VetHelpIOS/API/ClientService.swift"
-                  timestampString = "539874376.86586"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "25">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VetHelpIOS/API/ClientService.swift"
-            timestampString = "539873329.727615"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "checkLogin(login:OnCompleted:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -426,7 +378,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/ResetPasswordController.swift"
-            timestampString = "539736368.047771"
+            timestampString = "541378946.190394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -442,7 +394,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/ResetPasswordController.swift"
-            timestampString = "539736368.0478669"
+            timestampString = "541378946.190505"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -457,28 +409,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VetHelpIOS/API/ClientService.swift"
-            timestampString = "539873329.728133"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "resetPassword(email:reCaptcha:OnCompleted:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/LoginController.swift"
-            timestampString = "539873329.728552"
+            timestampString = "541378946.190611"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "loginOnTap(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -490,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VetHelpIOS/Controllers/LoginController.swift"
-            timestampString = "539873329.729063"
+            timestampString = "541378946.19072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -529,6 +465,20 @@
             endingLineNumber = "20"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VetHelpIOS/Classes/User/User.swift"
+            timestampString = "541363990.5816931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
