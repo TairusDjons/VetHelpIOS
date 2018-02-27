@@ -30,7 +30,7 @@ class ClientService: BaseService{
         
         }
         OAuth.oauth2.useKeychain = true
-        //OAuth.oauth2.storeTokensToKeychain()
+        OAuth.oauth2.storeTokensToKeychain()
         
 
         //oauth2.authConfig.authorizeEmbedded = true
